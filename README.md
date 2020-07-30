@@ -4,7 +4,7 @@ A scheduler app for a dispatcher to manage drivers' tasks.
 
 ## Demo
 
-https://ninja-dispatcher.herokuapp.com/
+<a href="https://ninja-dispatcher.herokuapp.com/" target="_blank">Ninja Dispatcher</a>
 
 ## Setup
 
