@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Login = () => {
-  const [password, setPassword] = useState('');
+  // const [password, setPassword] = useState('');
 
   return (
     <div>
@@ -12,7 +12,7 @@ const Login = () => {
             placeholder='Password'
             name='password'
             minLength='6'
-            value={password}
+            value={'123'}
           />
         </div>
         <input type='submit' className='btn btn-primary' value='Login' />
