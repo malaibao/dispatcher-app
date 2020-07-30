@@ -6,7 +6,8 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import DeleteIcon from '@material-ui/icons/Delete';
+import DoneIcon from '@material-ui/icons/Done';
+import CloseIcon from '@material-ui/icons/Close';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(styles);
@@ -21,27 +22,29 @@ const ExitDialog = ({ open, handleClose, handleContinue }) => {
       aria-labelledby='alert-dialog-title'
       aria-describedby='alert-dialog-description'
     >
-      <DialogTitle id='alert-dialog-title'>{'Abort operation?'}</DialogTitle>
+      <DialogTitle id='alert-dialog-title'>{'Exit?'}</DialogTitle>
       <DialogContent>
         <DialogContentText id='alert-dialog-description'>
           Are you sure you to exit?
         </DialogContentText>
+
         <Button
           variant='outlined'
+          color='primary'
           onClick={handleClose}
-          color='secondary'
-          startIcon={<DeleteIcon />}
+          startIcon={<DoneIcon />}
+          autoFocus
         >
-          Abort
+          Yes
         </Button>
         <Button
           className={classes.inputMargin}
           variant='outlined'
           onClick={() => handleContinue(false)}
-          color='primary'
-          autoFocus
+          color='secondary'
+          startIcon={<CloseIcon />}
         >
-          Continue
+          No
         </Button>
       </DialogContent>
     </Dialog>
