@@ -31,6 +31,10 @@ npm run dev
 npm rebuild node-sass
 ```
 
+### note
+
+1. Some of the tasks don't have location, so it would show 'No location given' in the website
+
 ### Work in Progress
 
 1. Admin Login page
