@@ -32,11 +32,18 @@ const tasks_list = {
       '2': {
         tasks: [
           {
+            id: '2004',
+            type: PICK_UP,
+            start_time: 3,
+            end_time: 6,
+            location: `McDonald's`,
+          },
+          {
             id: '1004',
             type: PICK_UP,
             start_time: 12,
             end_time: 14,
-            location: 'McDonald',
+            location: `McDonald's`,
           },
           {
             id: '1005',
@@ -57,6 +64,13 @@ const tasks_list = {
       '3': {
         tasks: [
           {
+            id: '2007',
+            type: DROP_OFF,
+            start_time: 0,
+            end_time: 5,
+            location: 'Staples',
+          },
+          {
             id: '1007',
             type: PICK_UP,
             start_time: 12,
@@ -68,7 +82,21 @@ const tasks_list = {
       '5': {
         tasks: [
           {
+            id: '3508',
+            type: PICK_UP,
+            start_time: 4,
+            end_time: 6,
+            location: 'Rona',
+          },
+          {
             id: '1008',
+            type: OTHER,
+            start_time: 6,
+            end_time: 7,
+            location: `Tim Horton's`,
+          },
+          {
+            id: '3108',
             type: PICK_UP,
             start_time: 12,
             end_time: 14,
@@ -83,7 +111,7 @@ const tasks_list = {
             type: PICK_UP,
             start_time: 8,
             end_time: 10,
-            location: 'McDonald',
+            location: `McDonald's`,
           },
           {
             id: '1010',
@@ -135,7 +163,7 @@ const tasks_list = {
             type: PICK_UP,
             start_time: 12,
             end_time: 14,
-            location: 'McDonald',
+            location: `McDonald's`,
           },
           {
             id: '1017',
@@ -171,7 +199,7 @@ const tasks_list = {
             type: PICK_UP,
             start_time: 8,
             end_time: 10,
-            location: 'McDonald',
+            location: `McDonald's`,
           },
           {
             id: '1021',
@@ -209,7 +237,7 @@ const tasks_list = {
       '3': {
         tasks: [
           {
-            id: 123457,
+            id: '123457',
             type: PICK_UP,
             start_time: 15,
             end_time: 19,
@@ -222,7 +250,7 @@ const tasks_list = {
       '7': {
         tasks: [
           {
-            id: 123461,
+            id: '123461',
             type: DROP_OFF,
             start_time: 11,
             end_time: 12,
@@ -235,7 +263,7 @@ const tasks_list = {
       '5': {
         tasks: [
           {
-            id: 123470,
+            id: '123470',
             type: OTHER,
             start_time: 13,
             end_time: 17,
@@ -248,7 +276,7 @@ const tasks_list = {
       '5': {
         tasks: [
           {
-            id: 123489,
+            id: '123489',
             type: PICK_UP,
             start_time: 15,
             end_time: 19,
@@ -261,7 +289,7 @@ const tasks_list = {
       '2': {
         tasks: [
           {
-            id: 123479,
+            id: '123479',
             type: PICK_UP,
             start_time: 13,
             end_time: 16,
@@ -274,7 +302,7 @@ const tasks_list = {
       '4': {
         tasks: [
           {
-            id: 123468,
+            id: '123468',
             type: DROP_OFF,
             start_time: 10,
             end_time: 11,
@@ -287,7 +315,7 @@ const tasks_list = {
       '3': {
         tasks: [
           {
-            id: 123474,
+            id: '123474',
             type: DROP_OFF,
             start_time: 17,
             end_time: 20,
@@ -300,7 +328,7 @@ const tasks_list = {
       '4': {
         tasks: [
           {
-            id: 123485,
+            id: '123485',
             type: OTHER,
             start_time: 16,
             end_time: 18,
@@ -313,7 +341,7 @@ const tasks_list = {
       '4': {
         tasks: [
           {
-            id: 123459,
+            id: '123459',
             type: OTHER,
             start_time: 9,
             end_time: 13,
@@ -326,14 +354,14 @@ const tasks_list = {
       '2': {
         tasks: [
           {
-            id: 123462,
+            id: '123462',
             type: PICK_UP,
             start_time: 9,
             end_time: 12,
             location: 'Best Buy',
           },
           {
-            id: 123472,
+            id: '123472',
             type: PICK_UP,
             start_time: 17,
             end_time: 20,
@@ -346,7 +374,7 @@ const tasks_list = {
       '5': {
         tasks: [
           {
-            id: 123467,
+            id: '123467',
             type: DROP_OFF,
             start_time: 13,
             end_time: 14,
@@ -357,11 +385,46 @@ const tasks_list = {
     },
   },
   'Fierce Bob': {
+    '1': {
+      '2': {
+        tasks: [
+          {
+            id: '234559',
+            type: PICK_UP,
+            start_time: 6,
+            end_time: 8,
+            location: 'Best Buy',
+          },
+        ],
+      },
+      '3': {
+        tasks: [
+          {
+            id: '240559',
+            type: PICK_UP,
+            start_time: 0,
+            end_time: 24,
+            location: 'Best Buy',
+          },
+        ],
+      },
+      '6': {
+        tasks: [
+          {
+            id: '234560',
+            type: DROP_OFF,
+            start_time: 0,
+            end_time: 2,
+            location: 'Best Buy',
+          },
+        ],
+      },
+    },
     '4': {
       '6': {
         tasks: [
           {
-            id: 123480,
+            id: '123480',
             type: DROP_OFF,
             start_time: 17,
             end_time: 21,
@@ -374,7 +437,7 @@ const tasks_list = {
       '3': {
         tasks: [
           {
-            id: 123487,
+            id: '123487',
             type: DROP_OFF,
             start_time: 12,
             end_time: 14,
@@ -387,7 +450,7 @@ const tasks_list = {
       '6': {
         tasks: [
           {
-            id: 123477,
+            id: '123477',
             type: OTHER,
             start_time: 8,
             end_time: 10,
@@ -400,7 +463,7 @@ const tasks_list = {
       '2': {
         tasks: [
           {
-            id: 123490,
+            id: '123490',
             type: DROP_OFF,
             start_time: 15,
             end_time: 18,
@@ -413,7 +476,7 @@ const tasks_list = {
       '1': {
         tasks: [
           {
-            id: 123484,
+            id: '123484',
             type: DROP_OFF,
             start_time: 17,
             end_time: 21,
@@ -426,7 +489,7 @@ const tasks_list = {
       '1': {
         tasks: [
           {
-            id: 123476,
+            id: '123476',
             type: OTHER,
             start_time: 8,
             end_time: 11,
@@ -439,7 +502,7 @@ const tasks_list = {
       '4': {
         tasks: [
           {
-            id: 123465,
+            id: '123465',
             type: PICK_UP,
             start_time: 8,
             end_time: 12,
@@ -452,7 +515,7 @@ const tasks_list = {
       '6': {
         tasks: [
           {
-            id: 123475,
+            id: '123475',
             type: PICK_UP,
             start_time: 17,
             end_time: 18,
@@ -465,7 +528,7 @@ const tasks_list = {
       '2': {
         tasks: [
           {
-            id: 123486,
+            id: '123486',
             type: DROP_OFF,
             start_time: 10,
             end_time: 11,
@@ -476,7 +539,7 @@ const tasks_list = {
       '4': {
         tasks: [
           {
-            id: 123481,
+            id: '123481',
             type: PICK_UP,
             start_time: 13,
             end_time: 16,
@@ -487,11 +550,49 @@ const tasks_list = {
     },
   },
   'John Doe': {
+    '1': {
+      '4': {
+        tasks: [
+          {
+            id: '873581',
+            type: DROP_OFF,
+            start_time: 6,
+            end_time: 8,
+            location: 'Shoppers',
+          },
+          {
+            id: '872492',
+            type: PICK_UP,
+            start_time: 12,
+            end_time: 14,
+            location: `Superstore`,
+          },
+        ],
+      },
+      '7': {
+        tasks: [
+          {
+            id: '873491',
+            type: OTHER,
+            start_time: 3,
+            end_time: 4,
+            location: `McDonald's`,
+          },
+          {
+            id: '873492',
+            type: DROP_OFF,
+            start_time: 4,
+            end_time: 7,
+            location: `Costco`,
+          },
+        ],
+      },
+    },
     '2': {
       '7': {
         tasks: [
           {
-            id: 123491,
+            id: '123491',
             type: OTHER,
             start_time: 14,
             end_time: 16,
@@ -504,7 +605,7 @@ const tasks_list = {
       '5': {
         tasks: [
           {
-            id: 123482,
+            id: '123482',
             type: DROP_OFF,
             start_time: 12,
             end_time: 13,
@@ -515,7 +616,7 @@ const tasks_list = {
       '6': {
         tasks: [
           {
-            id: 123460,
+            id: '123460',
             type: OTHER,
             start_time: 11,
             end_time: 15,
@@ -528,7 +629,7 @@ const tasks_list = {
       '2': {
         tasks: [
           {
-            id: 123464,
+            id: '123464',
             type: OTHER,
             start_time: 17,
             end_time: 18,
@@ -541,7 +642,7 @@ const tasks_list = {
       '1': {
         tasks: [
           {
-            id: 123471,
+            id: '123471',
             type: OTHER,
             start_time: 12,
             end_time: 14,
@@ -554,7 +655,7 @@ const tasks_list = {
       '2': {
         tasks: [
           {
-            id: 123473,
+            id: '123473',
             type: OTHER,
             start_time: 12,
             end_time: 15,
@@ -567,7 +668,7 @@ const tasks_list = {
       '4': {
         tasks: [
           {
-            id: 123456,
+            id: '123456',
             type: OTHER,
             start_time: 11,
             end_time: 13,
@@ -580,7 +681,7 @@ const tasks_list = {
       '6': {
         tasks: [
           {
-            id: 123463,
+            id: '123463',
             type: PICK_UP,
             start_time: 10,
             end_time: 14,
@@ -593,7 +694,7 @@ const tasks_list = {
       '4': {
         tasks: [
           {
-            id: 123488,
+            id: '123488',
             type: PICK_UP,
             start_time: 17,
             end_time: 18,
@@ -606,7 +707,7 @@ const tasks_list = {
       '7': {
         tasks: [
           {
-            id: 123458,
+            id: '123458',
             type: DROP_OFF,
             start_time: 15,
             end_time: 16,
@@ -619,7 +720,7 @@ const tasks_list = {
       '1': {
         tasks: [
           {
-            id: 123493,
+            id: '123493',
             type: PICK_UP,
             start_time: 16,
             end_time: 17,
@@ -632,14 +733,14 @@ const tasks_list = {
       '1': {
         tasks: [
           {
-            id: 123478,
+            id: '123478',
             type: PICK_UP,
             start_time: 10,
             end_time: 13,
             location: 'PetSmart',
           },
           {
-            id: 123483,
+            id: '123483',
             type: PICK_UP,
             start_time: 13,
             end_time: 17,
@@ -652,7 +753,7 @@ const tasks_list = {
       '1': {
         tasks: [
           {
-            id: 123469,
+            id: '123469',
             type: DROP_OFF,
             start_time: 9,
             end_time: 10,
@@ -665,7 +766,7 @@ const tasks_list = {
       '2': {
         tasks: [
           {
-            id: 123466,
+            id: '123466',
             type: DROP_OFF,
             start_time: 17,
             end_time: 19,
@@ -678,7 +779,7 @@ const tasks_list = {
       '2': {
         tasks: [
           {
-            id: 123492,
+            id: '123492',
             type: DROP_OFF,
             start_time: 13,
             end_time: 14,
