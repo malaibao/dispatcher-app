@@ -25,6 +25,7 @@ npm run dev
 ```
 
 4. If you encounter `node-sass` issue, try run the following command in the `client` folder and then run step 3
+5. Check in browser on http://localhost:5000/ <a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a>
 
 ```
 npm rebuild node-sass
