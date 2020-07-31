@@ -10,6 +10,7 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 
 import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
+import Alert from '@material-ui/lab/Alert';
 
 import Button from '@material-ui/core/Button';
 import GetAppIcon from '@material-ui/icons/GetApp';
@@ -35,6 +36,8 @@ const ReportFormDialog = ({
     driver: driver,
   });
 
+  const [error, setError] = useState(false);
+
   const changeInput = (e) => {
     const inputName = e.target.name;
     const inputVal = e.target.value;
@@ -43,6 +46,11 @@ const ReportFormDialog = ({
   };
 
   const getCSV = () => {
+    if (!state.driver) {
+      setError(true);
+      return;
+    }
+    setError(false);
     const csvArr = generateCSVData(state.dayInterval, tasksList[state.driver]);
 
     const options = {
@@ -72,6 +80,7 @@ const ReportFormDialog = ({
     >
       <DialogTitle id='Report-Form__title'>Report Form</DialogTitle>
       <DialogContent className={classes.reportFormDialog}>
+        {error && <Alert severity='error'>Please select a driver.</Alert>}
         <DialogContentText>
           To download a report, please select a driver and a day interval.
         </DialogContentText>
